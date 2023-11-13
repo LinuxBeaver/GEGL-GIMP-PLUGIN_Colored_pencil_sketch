@@ -2,15 +2,17 @@
  
 Charcoal Sketch a Gimp GEGL Plugin that does a charcoal sketch effect with lines and a colored pencil mode.
 
-Download procompiled binaries here
-/releases
+**Download procompiled binaries here**
+
+https://github.com/LinuxBeaver/Colored_Pencil_Sketch_Gimp_Plugin/releases/tag/Charcoled_Sketch_Gimp_Plugin/releases
+
+![image preview](Previews/preview1.png)
 
 ## Location to put binaries
 
 ## Windows
-![image preview](Previews/preview1.png)
+ C:\Users\(USERNAME)\AppData\Local\gegl-0.4\plug-ins
 
- 
 ## Linux 
  /home/(USERNAME)/.local/share/gegl-0.4/plug-ins
  
