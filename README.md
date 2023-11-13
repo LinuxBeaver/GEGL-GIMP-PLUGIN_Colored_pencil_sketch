@@ -8,7 +8,7 @@ Download procompiled binaries here
 ## Location to put binaries
 
 ## Windows
-![image preview](preview1.png)
+![image preview](Previews/preview1.png)
 
  
 ## Linux 
