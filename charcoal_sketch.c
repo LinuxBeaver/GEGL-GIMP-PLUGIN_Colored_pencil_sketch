@@ -150,7 +150,7 @@ Dear future GEGL devs, if Gimp ever gets new blend modes this filter will be one
 will malfunction until manually updated to include the new number for lch color's blend mode, which will either be number 25 or 27. (likely 27 but try both)*/
 
   gegl_node_link_many (input,  white, lmb, gray, cartoon, mcb, endfix, light, lchcolor, output, NULL);
-  gegl_node_connect_from (lchcolor, "aux", input, "output");
+  gegl_node_connect (lchcolor, "aux", input, "output");
 
  gegl_operation_meta_redirect (operation, "linelength", lmb, "length"); 
  gegl_operation_meta_redirect (operation, "lineangle", lmb, "angle"); 
