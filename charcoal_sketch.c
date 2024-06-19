@@ -74,7 +74,7 @@ property_double (paperlight, _("Levels (in high)"), 0.45)
 
 property_double (whitelight, _("Levels (out low)"), 0.0)
    description (_("Levels - out low setting"))
-   value_range (0.0, 0.4)
+   value_range    (0.0, 1.0)
    ui_range    (0.0, 0.4)
    ui_gamma    (3.0)
 
@@ -102,7 +102,6 @@ static void attach (GeglOperation *operation)
   input    = gegl_node_get_input_proxy (gegl, "input");
   output   = gegl_node_get_output_proxy (gegl, "output");
 
-  GeglProperties *o = GEGL_PROPERTIES (operation);
 
                               
 #define fix \
