@@ -16,7 +16,7 @@
  * Credit to Øyvind Kolås (pippin) for major GEGL contributions
  * 2023 Beaver, Charcoal Sketch 
 
-Test this filter without installing by pasting this GEGL Syntax inside Gimp's GEGL Graph filter
+Test this filter without installing by pasting this GEGL Syntax inside Gimpꞌs GEGL Graph filter
 
 motion-blur-linear length=12 angle=130
 
@@ -54,7 +54,7 @@ While developing this filter, I spent a several minutes puzzled wondering why th
 so keep in mind all future GEGL devs that this code is needed for the slider. */
 
 property_double (cartoonmr, _("Cartoon (mask radius)"), 1.9)
-   description (_("gegl:cartoon's mask radius setting"))
+   description (_("gegl:cartoonꞌs mask radius setting"))
    value_range (1.0, 4.0)
    ui_range    (1.0, 4.0)
    ui_gamma    (3.0)
@@ -84,7 +84,7 @@ property_double (coloredpencil, _("Colored Pencil Mode"), 0.0)
    ui_range    (0.0, 1.0)
    ui_gamma    (3.0)
   ui_steps      (0.1, 0.1)
-/*In default LCH Color's opacity is 0 that hides it entirely. This makes it go from 0 to 100%. */
+/*In default LCH Colorꞌs opacity is 0 that hides it entirely. This makes it go from 0 to 100%. */
 
 #else
 
@@ -146,7 +146,7 @@ it is meant to enable or disable the colored pencil effect.
 IF THIS FILTER BREAKS IN THE FUTURE THIS IS LIKELY THE AREA TO LOOK
 
 Dear future GEGL devs, if Gimp ever gets new blend modes this filter will be one number off (thus using the wrong blend mode) and this filter
-will malfunction until manually updated to include the new number for lch color's blend mode, which will either be number 25 or 27. (likely 27 but try both)*/
+will malfunction until manually updated to include the new number for lch colorꞌs blend mode, which will either be number 25 or 27. (likely 27 but try both)*/
 
   gegl_node_link_many (input,  white, lmb, gray, cartoon, mcb, endfix, light, lchcolor, output, NULL);
   gegl_node_connect (lchcolor, "aux", input, "output");
@@ -176,7 +176,7 @@ gegl_op_class_init (GeglOpClass *klass)
     "reference-hash", "324324beavis2232323butthead323",
     "description", _("Make a charcoal style sketch that also includes a colored pencil option."),
     "gimp:menu-path", "<Image>/Filters/Artistic",
-    "gimp:menu-label", _("Sketched Image"),
+    "gimp:menu-label", _("Sketched Image..."),
     NULL);
 }
 
